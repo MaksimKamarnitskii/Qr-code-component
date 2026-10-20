@@ -5,39 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./CSS/normalize.css">
+  <link rel="stylesheet" href="./CSS/style.css">
   
   <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header class="header">
   </header>
 
   <main>
-    <section class="major">
-      <div class="container">
-        <!-- <h1 class="card card__caption--hidden">QR code</h1> -->
+    <h1 class="main-title main-title--hidden">
+      QR code component
+    </h1>
+    <div class="container">
+      <article class="qr-card">
+        <img class="card__img" src="./images/image-qr-code.png" alt="Frontend Mentor QR">
         
-        <article class="qr-card">
-          <img class="card__img" src="/images/image-qr-code.png" alt="Frontend Mentor QR">
+        <div class="qr-card__content">
+          <p class="qr-card__title">
+            Improve your front-end skills by building projects
+          </p>
           
-          <div class="qr-card__content">
-            <h1 class="qr-card__title">
-              Improve your front-end skills by building projects
-            </h1>
-            
-            <p class="qr-card__text">
-              Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
+          <p class="qr-card__text">
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+          </p>
+        </div>
+      </article>
+    </div>
   </main>
 
   <footer class="attribution">
