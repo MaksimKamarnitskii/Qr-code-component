@@ -2,13 +2,12 @@
 @font-face {
 	font-family: 'Outfit';
   src: local('Outfit-VariableFont_wght');
-	src: url('./fonts/Outfit-VariableFont_wght.ttf') format('ttf');
+	src: url('../fonts/Outfit-VariableFont_wght.ttf') format('truetype');
   font-display: swap;
 	font-weight: 400 700;
 	font-style: normal;
 }
 
-/* Общие стили */
 html {
   box-sizing: border-box;
 }
@@ -29,19 +28,30 @@ img {
 }
 
 body {
-  min-width: 320px;
-  font-family: 'Outfit';
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Outfit', sans-serif;
   background-color: #d5e1ef;
 }
 
-/* Индивидуальные стили */
-.main-title--hidden {
+.main {
+  padding: 15px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main_title--hidden {
   display: none;
 }
 
 .container {
+  width: 100%;
   max-width: 1440px;
-  min-height: 960px;
   margin: 0 auto;
 }
 
@@ -56,7 +66,7 @@ body {
   background-color: #fff;
 }
 
-.card__img {
+.qr-card__img {
   border-radius: 10px;
 }
 
@@ -90,6 +100,4 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-/* Не подтягиваются шрифты. 
-Не знаю как отцентровать карточку по вертикали.
-Может быть убрать h1 из карточки */
+/* Не знаю как отцентровать карточку по вертикали. */
